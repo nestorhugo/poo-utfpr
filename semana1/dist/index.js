@@ -1,7 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Animal_1 = require("./Animal");
+const Cachorrinho_1 = require("./Cachorrinho");
+const Cao_1 = require("./Cao");
 let x = new Animal_1.default("Cachorro");
 let gato = new Animal_1.default("Mimi");
 console.log(x.getName());
 console.log(gato.getName());
+console.clear();
+let pluto = new Cao_1.default("pluto");
+pluto.corre();
+let bidu = new Cachorrinho_1.default("bidu");
+bidu.corre();
+bidu.late();
