@@ -21,11 +21,10 @@ export class Relatorio {
       )
       .filter((funcionario) => !funcao || funcionario.getFuncao() === funcao)
       .forEach((funcionario) => {
-        const imc = funcionario.calcularIMC();
         console.log(
           `Nome: ${funcionario.getNome()}, Sexo: ${funcionario.getSexo()}, Departamento: ${funcionario
             .getDepartamento()
-            .getNome()}, Função: ${funcionario.getFuncao()}, IMC: ${imc}`
+            .getNome()}, Função: ${funcionario.getFuncao()}, ${funcionario.classificarIMC()}`
         );
       });
   }

@@ -24,7 +24,7 @@ let funcionario1 = new Funcionario(
   "Desenvolvedor"
 );
 let funcionario2 = new Funcionario(
-  "Maria",
+  "Mirtha",
   "Feminino",
   28,
   60,

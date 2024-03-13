@@ -7,7 +7,7 @@ let departamentoTI = new Departamento_1.Departamento("TI");
 let funcionario = new Funcionario_1.Funcionario("Nestor", "Masculino", 30, 70, 1.75, departamentoTI, "Desenvolvedor");
 console.log(funcionario.getNome());
 let funcionario1 = new Funcionario_1.Funcionario("Nestor", "Masculino", 30, 70, 1.75, departamentoTI, "Desenvolvedor");
-let funcionario2 = new Funcionario_1.Funcionario("Maria", "Feminino", 28, 60, 1.65, departamentoTI, "Analista");
+let funcionario2 = new Funcionario_1.Funcionario("Mirtha", "Feminino", 28, 60, 1.65, departamentoTI, "Analista");
 let relatorio = new Relatorio_1.Relatorio([funcionario1, funcionario2]);
 // Gera relatório para todos os funcionários
 relatorio.gerarRelatorio();
