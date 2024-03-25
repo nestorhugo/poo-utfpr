@@ -11,5 +11,12 @@ class Datacenter {
     addNewFood(food) {
         this.foods.push(food);
     }
+    removeFood(food) {
+        const index = this.foods.indexOf(food);
+        this.foods.splice(index, 1);
+    }
+    getFoodProductSize() {
+        return this.foods.length;
+    }
 }
 exports.default = Datacenter;
