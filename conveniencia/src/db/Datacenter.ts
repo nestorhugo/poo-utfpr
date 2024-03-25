@@ -11,4 +11,13 @@ export default class Datacenter {
   public addNewFood(food: FoodProduct): void {
     this.foods.push(food);
   }
+
+  public removeFood(food: FoodProduct): void {
+    const index = this.foods.indexOf(food);
+    this.foods.splice(index, 1);
+  }
+
+  public getFoodProductSize(): number {
+    return this.foods.length;
+  }
 }
