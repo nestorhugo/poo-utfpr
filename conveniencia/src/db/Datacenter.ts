@@ -1,23 +1,26 @@
 import CleaningProduct from "../model/CleaningProduct";
 import FoodProduct from "../model/FoodProduct";
 
-// Lei da responsabilidade unica
-// Datacenter é responsável por armazenar os dados da aplicação
-// Datacenter não deve ser responsável por manipular os dados
-export default class Datacenter {
-  private foods: FoodProduct[] = [];
-  private cleaningProducts: CleaningProduct[] = [];
+//lei da responsabilidade unica.
+//cabe ao Datacenter guardar, acessar e manipular os dados de 
+// FoodProduct e CleaningProduct
+export default class Datacenter{
 
-  public addNewFood(food: FoodProduct): void {
-    this.foods.push(food);
-  }
 
-  public removeFood(food: FoodProduct): void {
-    const index = this.foods.indexOf(food);
-    this.foods.splice(index, 1);
-  }
+    public foodProducts: FoodProduct[] = [];
+    private cleanProducts: CleaningProduct[] = [];
 
-  public getFoodProductSize(): number {
-    return this.foods.length;
-  }
+ 
+    public addNewFood(food: FoodProduct): void {
+       this.foodProducts.push(food);
+    }
+
+    public removeFood(id: number): void{
+        this.foodProducts.splice(id, 1);
+    }
+
+    public getFoodProductSize(): number{
+        return this.foodProducts.length;
+    }
+
 }

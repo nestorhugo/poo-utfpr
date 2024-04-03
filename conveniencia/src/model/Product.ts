@@ -2,8 +2,8 @@ export default class Product{
 
   private id: number = 0;
   private name: string = "";
-  costPrice: number = 0;
-  salePrice: number = 0;
+  private costPrice: number = 0;
+  private salePrice: number = 0;
 
 
   //respectivos gets e sets

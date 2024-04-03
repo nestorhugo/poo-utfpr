@@ -1,35 +1,19 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-class FoodProduct {
+const Product_1 = __importDefault(require("./Product"));
+class FoodProduct extends Product_1.default {
     constructor() {
+        super(...arguments);
         this.expirationDate = 0;
-        this.name = "";
-        this.id = 0;
-        this.costPrice = 0;
     }
     getExpirationDate() {
         return this.expirationDate;
     }
-    setExpirationDate(expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-    getName() {
-        return this.name;
-    }
-    setName(name) {
-        this.name = name;
-    }
-    getId() {
-        return this.id;
-    }
-    setId(id) {
-        this.id = id;
-    }
-    getCostPrice() {
-        return this.costPrice;
-    }
-    setCostPrice(costPrice) {
-        this.costPrice = costPrice;
+    setExpirationDate(expiratioDate) {
+        this.expirationDate = expiratioDate;
     }
 }
 exports.default = FoodProduct;

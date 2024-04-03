@@ -1,35 +1,38 @@
-// import CleaningProduct from "./model/CleaningProduct";
-import Datacenter from "./db/Datacenter";
-import FoodProduct from "./model/FoodProduct";
+// // import CleaningProduct from "./model/CleaningProduct";
 
-// let qboa = new CleaningProduct();
-// qboa.setName("Água sanitaria");
-// qboa.setId(1);
-// qboa.setCostPrice(10.00);
-// qboa.computeSalePrice();
-// qboa.setDescription("Feita para limpar banheiros");
+import BasicController from "./control/BasicController";
+import PrimarySceen from "./view/PrimaryScreen";
 
-// console.log("id do produto: "+qboa.getId()+"\nnome: "+qboa.getName()+"\ncusto: "+qboa.getCostPrice()+"\nPreço venda: "+qboa.getSalePrice());
-// console.log("Descrição "+qboa.getDescription());
+// import Datacenter from "./db/Datacenter";
+// import FoodProduct from "./model/FoodProduct";
 
-let arroz: FoodProduct = new FoodProduct();
-let feijao: FoodProduct = new FoodProduct();
+// // let qboa = new CleaningProduct();
+// // qboa.setName("Água sanitaria");
+// // qboa.setId(1);
+// // qboa.setCostPrice(10.00);
+// // qboa.computeSalePrice();
+// // qboa.setDescription("Feita para limpar banheiros");
 
-arroz.setName("Arroz Pinduca");
-arroz.setExpirationDate(2022);
-arroz.setCostPrice(10.0);
-arroz.setId(1);
+// // console.log("id do produto: "+qboa.getId()+"\nnome: "+qboa.getName()+"\ncusto: "+qboa.getCostPrice()+"\nPreço venda: "+qboa.getSalePrice());
+// // console.log("Descrição "+qboa.getDescription());
 
-feijao.setName("Feijão Pinduca");
-feijao.setExpirationDate(2022);
-feijao.setCostPrice(10.0);
-feijao.setId(1);
+// let arroz: FoodProduct = new FoodProduct();
+// let feijao: FoodProduct = new FoodProduct();
+// arroz.setCostPrice(100);
+// arroz.setId(12);
+// arroz.setName("tio joao");
 
-let db: Datacenter = new Datacenter();
-db.addNewFood(arroz);
-db.addNewFood(feijao);
-console.log(db.getFoodProductSize());
-console.log(db);
-console.log("#################");
-db.removeFood(arroz);
-console.log(db);
+// feijao.setCostPrice(234);
+// feijao.setId(11);
+// feijao.setName("pinduca");
+
+// let bd: Datacenter = new Datacenter();
+// bd.addNewFood(arroz);
+// bd.addNewFood(feijao);
+// console.log(bd.getFoodProductSize());
+// console.log(bd);
+// bd.removeFood(0);
+// console.log(bd.getFoodProductSize());
+
+let startController: BasicController = new BasicController();
+startController.startSystem();

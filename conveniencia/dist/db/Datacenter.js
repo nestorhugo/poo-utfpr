@@ -1,22 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// Lei da responsabilidade unica
-// Datacenter é responsável por armazenar os dados da aplicação
-// Datacenter não deve ser responsável por manipular os dados
+//lei da responsabilidade unica.
+//cabe ao Datacenter guardar, acessar e manipular os dados de 
+// FoodProduct e CleaningProduct
 class Datacenter {
     constructor() {
-        this.foods = [];
-        this.cleaningProducts = [];
+        this.foodProducts = [];
+        this.cleanProducts = [];
     }
     addNewFood(food) {
-        this.foods.push(food);
+        this.foodProducts.push(food);
     }
-    removeFood(food) {
-        const index = this.foods.indexOf(food);
-        this.foods.splice(index, 1);
+    removeFood(id) {
+        this.foodProducts.splice(id, 1);
     }
     getFoodProductSize() {
-        return this.foods.length;
+        return this.foodProducts.length;
     }
 }
 exports.default = Datacenter;
