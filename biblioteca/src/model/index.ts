@@ -36,8 +36,8 @@
 
 // bookController.listAllBooks();
 
-import BasicController from "./src/view/BasicController";
-import PrimaryScreen from "./src/view/PrimaryScreen";
+import BasicController from "../view/BasicController";
+import PrimaryScreen from "../view/PrimaryScreen";
 
 let startController: BasicController = new BasicController();
 startController.startSystem();
