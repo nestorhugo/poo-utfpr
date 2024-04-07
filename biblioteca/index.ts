@@ -24,14 +24,20 @@
 
 // console.log(library.listBooks());
 
-import Datacenter from "../db/Datacenter";
-import BookController from "../control/BookController";
+// import Datacenter from "../db/Datacenter";
+// import BookController from "../control/BookController";
 
-const datacenter = new Datacenter();
+// const datacenter = new Datacenter();
 
-const bookController = new BookController(datacenter);
+// const bookController = new BookController(datacenter);
 
-const newBook = bookController.getNewBook(1, "O Senhor dos Anéis", "Fantasia");
-bookController.registerNewBook(newBook);
+// const newBook = bookController.getNewBook(1, "O Senhor dos Anéis", "Fantasia");
+// bookController.registerNewBook(newBook);
 
-bookController.listAllBooks();
+// bookController.listAllBooks();
+
+import BasicController from "./src/view/BasicController";
+import PrimaryScreen from "./src/view/PrimaryScreen";
+
+let startController: BasicController = new BasicController();
+startController.startSystem();

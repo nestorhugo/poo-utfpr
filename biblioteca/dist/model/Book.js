@@ -7,6 +7,20 @@ class Book {
         this.category = category;
         this.isAvailable = isAvailable;
     }
+    setTitle(title) {
+        this.title = title;
+    }
+    // Método para definir a categoria do livro
+    setCategory(category) {
+        this.category = category;
+    }
+    // Você também pode querer adicionar "getters" para essas propriedades
+    getTitle() {
+        return this.title;
+    }
+    getCategory() {
+        return this.category;
+    }
     reserve() {
         if (this.isAvailable) {
             this.isAvailable = false;
