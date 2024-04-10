@@ -1,5 +1,5 @@
 import promptSync from "prompt-sync";
-import BookController from "../control/BookController";
+import BookController from "../controller/BookController";
 import Book from "../model/Book";
 
 export default class PrimaryScreen {
